@@ -9,7 +9,7 @@ def start_restart(scores, screen, font, redo_image, end_image, NUM_ROWS, MARGIN,
     player_name = get_player_name(WIDTH, HEIGHT, screen)
 
     scores.append([score, player_name])
-    scores = sorted(scores, key=lambda x: x[1])
+    scores = sorted(scores, key=lambda x: x[0])
 
     redo = pygame.Rect(50, 250, 400, 400)
     nope = pygame.Rect(550, 250, 400, 400)
